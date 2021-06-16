@@ -1,6 +1,6 @@
 /*
 PARTE 1
-Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età. Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell’oggetto.
+Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età. Stampare a schermo attraverso un ciclo for-in tutte le proprietà (coppia chiave/valore) dell’oggetto.
 */
 var student = {
     name: 'Sebastian',
@@ -9,7 +9,7 @@ var student = {
  }
 
  for(var key in student){
-    console.log(key + ':', student[key])
+    console.log(key + ':' + student[key]); 
 }
 
 /*PARTE 2
@@ -45,11 +45,10 @@ var classe = [
 
   
 for (var i = 0; i < classe.length; i++)  {
-    console.log(classe[i]);
-    for(var key in classe[i]){
-    console.log(key,classe[i][key])
+    console.log(classe[i].name,classe[i].cognome);
+
 }
-}
+
 /*PARTE 3
 Dare la possibilità all’utente, attraverso 3 prompt() - uno per ciascuna proprietà - di aggiungere UN SOLO oggetto studente inserendo nell’ordine: nome, cognome e età.
 */
@@ -66,10 +65,10 @@ var studente = {
 classe.push(studente);
 
 for (var i = 0; i < classe.length; i++)  {
-    console.log(classe[i]);
+    console.log(classe[i].name,classe[i].cognome);
     for(var key in classe[i]){
     console.log(key,classe[i][key])
 }
 }
 
-console.log('nuova classe');
+console.log(classe);
