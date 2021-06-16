@@ -1,27 +1,3 @@
-/*var rubrica = {
-    users: []
- }
-// # pushiamo gli oggetti delle persone in users, man mano che l'utente li inserisce
- 
-while (rubrica.users.length <3){
-    var pName = prompt('nome utente')
-    var pSurname = prompt('cognome utente');
-    var pTelephone = prompt('telefono utente');
-
-    rubrica.users.push({
-        name: pName,
-        surname: pSurname,
-        telephone: pTelephone
-    })
-}
-console.log(rubrica)
-
-for (var i = 0; i < rubrica.users.length; i++) {
-    console.log(rubrica.users[i]              )
-for(var key in rubrica.users[i]){
-    console.log(key,rubrica.users[i][key])
-}
-}*/
 /*
 PARTE 1
 Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età. Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell’oggetto.
